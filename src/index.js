@@ -99,8 +99,6 @@ const UnderlineEmphasis = ({ children }) => {
   });
 
   const pointCount = 5 + Math.floor(normalisedPointCountArray[0]);
-  console.log(pointCount);
-
 
   const xArray = getArrayByFunction({
     getArrayValue: lcGenerator,
@@ -143,8 +141,9 @@ const UnderlineEmphasis = ({ children }) => {
     backgroundRepeat: "no-repeat",
     backgroundSize: "100% auto",
     display: "inline",
+    fontStyle: "inherit",
+    overflow: "visible",
     whiteSpace: "nowrap",
-    overflow: "visible"
   };
 
   return (
