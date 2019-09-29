@@ -83,7 +83,7 @@ const normaliseArray = ({ array = [], max = 1, min = 0 } = {}) =>
   );
 
 const UnderlineEmphasis = ({ children }) => {
-  const width = 100;
+  const width = 20 * children.length;
   const height = 10;
   const seed = getSeed(children);
   const lcGenerator = createLCGenerator({ seed: seed });
