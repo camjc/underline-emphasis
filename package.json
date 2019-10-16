@@ -1,38 +1,49 @@
 {
   "name": "underline-emphasis",
-  "version": "1.0.0",
-  "description": "underline-emphasis React component",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "description": "UnderlineEmphasis React component",
+  "author": "Cameron Chamberlain",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/underline-emphasis.esm.js",
+  "typings": "dist/index.d.ts",
   "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
+    "dist"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
-    "clean": "nwb clean-module && nwb clean-demo",
-    "prepublishOnly": "npm run build",
-    "start": "nwb serve-react-demo",
-    "test": "nwb test-react",
-    "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint"
   },
-  "dependencies": {},
   "peerDependencies": {
-    "react": "16.x"
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
   },
   "devDependencies": {
-    "nwb": "0.23.x",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1"
+    "@types/jest": "^24.0.18",
+    "@types/react-dom": "^16.9.1",
+    "@types/react-test-renderer": "^16.9.1",
+    "@types/react": "^16.9.5",
+    "husky": "^3.0.9",
+    "react-dom": "^16.10.2",
+    "react-test-renderer": "^16.10.2",
+    "react": "^16.10.2",
+    "tsdx": "^0.9.3",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.4"
   },
-  "author": "",
-  "homepage": "",
-  "license": "MIT",
-  "repository": "",
-  "keywords": [
-    "react-component"
-  ]
+  "dependencies": {
+    "tiny-invariant": "^1.0.6"
+  }
 }

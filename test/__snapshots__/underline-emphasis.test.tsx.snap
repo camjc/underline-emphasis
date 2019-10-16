@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders with children 1`] = `
+<em
+  style={
+    Object {
+      "backgroundImage": "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYwIiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgMjYwIDEwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPHBvbHlsaW5lIHBvaW50cz0iMTY3Ljk5NTY4Nzc3NzUwNDE3LDEwIDAsMy42MDgzMDY2MTg3MjAxNjMzIDI2MCwwIiBzdHJva2U9IiM5ODU1RDQiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDwvc3ZnPg==')",
+      "backgroundPosition": "bottom",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "100% auto",
+      "display": "inline",
+      "fontStyle": "inherit",
+      "overflow": "visible",
+      "whiteSpace": "nowrap",
+    }
+  }
+>
+  children text
+</em>
+`;
