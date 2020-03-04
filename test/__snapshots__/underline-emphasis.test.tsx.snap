@@ -4,7 +4,7 @@ exports[`it renders with children 1`] = `
 <em
   style={
     Object {
-      "backgroundImage": "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYwIiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgMjYwIDEwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPHBvbHlsaW5lIHBvaW50cz0iMTY3Ljk5NTY4Nzc3NzUwNDE3LDEwIDAsMy42MDgzMDY2MTg3MjAxNjMzIDI2MCwwIiBzdHJva2U9IiM5ODU1RDQiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDwvc3ZnPg==')",
+      "backgroundImage": "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYwIiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMjYwIDE2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPHBvbHlsaW5lIHBvaW50cz0iMTY2LjgyNjU4OTY5MjA0MjUsMTIgNCw2Ljg4NjY0NTI5NDk3NjEzIDI1Niw0IiBzdHJva2U9IiM5ODU1RDQiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPgogIDwvc3ZnPg==')",
       "backgroundPosition": "bottom",
       "backgroundRepeat": "no-repeat",
       "backgroundSize": "100% auto",
