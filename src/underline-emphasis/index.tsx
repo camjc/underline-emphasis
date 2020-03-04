@@ -13,7 +13,6 @@ const fixedStyle: React.CSSProperties = {
   display: 'inline',
   fontStyle: 'inherit',
   overflow: 'visible',
-  whiteSpace: 'nowrap',
 };
 
 export const UnderlineEmphasis: React.FunctionComponent<{
