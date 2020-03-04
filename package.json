@@ -3,7 +3,7 @@
   "description": "UnderlineEmphasis React component",
   "author": "Cameron Chamberlain",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "module": "dist/underline-emphasis.esm.js",
   "typings": "dist/index.d.ts",
