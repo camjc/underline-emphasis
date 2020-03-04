@@ -29,12 +29,15 @@ export const UnderlineEmphasis: React.FunctionComponent<{
     getArrayValue: lcGenerator,
     length: 3,
   });
-  const normalisedPointCountArray = normaliseArray({
-    array: pointCountArray,
-    max: height,
-    min: 0,
-  });
-  const pointCount = 3 + Math.floor(normalisedPointCountArray[0]);
+  const minPointCount = 3;
+  const maxPointCount = 5;
+  const pointCount = Math.floor(
+    normaliseArray({
+      array: pointCountArray,
+      max: maxPointCount + 1,
+      min: minPointCount,
+    }).sort()[1]
+  );
   const xArray = getArrayByFunction({
     getArrayValue: lcGenerator,
     length: pointCount,
