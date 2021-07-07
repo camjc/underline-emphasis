@@ -6,23 +6,35 @@ import { normaliseArray } from './utils/normalise-array';
 import { sortArrayNumerically } from './utils/sort-array-numerically';
 import { isOdd } from './utils/is-odd';
 
-const fixedStyle: React.CSSProperties = {
-  backgroundPosition: 'bottom',
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: '100% auto',
+const emStyle: React.CSSProperties = {
   display: 'inline',
   fontStyle: 'inherit',
   overflow: 'visible',
+  position: 'relative',
+};
+
+const underlineStyle: React.CSSProperties = {
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: '100% auto',
+  left: '50%',
+  position: 'absolute',
+  transform: 'translateX(-50%)',
+  width: '100%',
 };
 
 export const UnderlineEmphasis: React.FunctionComponent<{
   children?: string;
-}> = ({ children }) => {
+  yOffset?: number;
+}> = ({ children, yOffset }: { children?: string; yOffset?: number }) => {
   if (typeof window === 'undefined' || !children || !children.length) {
     return null;
   }
   const width = 20 * children.length;
   const height = 16;
+  const top = yOffset
+    ? `calc(100% - ${height / 2}px + ${yOffset}px`
+    : `calc(100% - ${height / 2}px)`;
+
   const seed = getSeed(children);
   const lcGenerator = createLCGenerator({ seed: seed });
   const pointCountArray: number[] = getArrayByFunction({
@@ -75,13 +87,17 @@ export const UnderlineEmphasis: React.FunctionComponent<{
 
   const encodedSvg = window.btoa(svgImage);
   return (
-    <em
-      style={{
-        ...fixedStyle,
-        backgroundImage: "url('data:image/svg+xml;base64," + encodedSvg + "')",
-      }}
-    >
+    <em style={emStyle}>
       {children}
+      <div
+        style={{
+          ...underlineStyle,
+          backgroundImage:
+            "url('data:image/svg+xml;base64," + encodedSvg + "')",
+          height,
+          top,
+        }}
+      />
     </em>
   );
 };
