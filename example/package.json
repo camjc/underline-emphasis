@@ -16,7 +16,7 @@
     "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
   },
   "devDependencies": {
-    "@types/react": "17.0.54",
+    "@types/react": "17.0.58",
     "@types/react-dom": "17.0.19",
     "parcel": "1.12.4",
     "typescript": "3.9.10"
