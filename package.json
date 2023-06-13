@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/jest": "29.5.2",
-    "@types/react": "17.0.60",
+    "@types/react": "17.0.61",
     "@types/react-dom": "17.0.20",
     "@types/react-test-renderer": "18.0.0",
     "husky": "4.3.8",
