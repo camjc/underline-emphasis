@@ -17,7 +17,8 @@ const fixedStyle: React.CSSProperties = {
 
 export const UnderlineEmphasis: React.FunctionComponent<{
   children?: string;
-}> = ({ children }) => {
+  style?: React.CSSProperties;
+}> = ({ children, style = {} }) => {
   if (typeof window === 'undefined' || !children || !children.length) {
     return null;
   }
@@ -79,6 +80,7 @@ export const UnderlineEmphasis: React.FunctionComponent<{
       style={{
         ...fixedStyle,
         backgroundImage: "url('data:image/svg+xml;base64," + encodedSvg + "')",
+        ...style,
       }}
     >
       {children}
