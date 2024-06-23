@@ -19,6 +19,6 @@
     "@types/react": "17.0.80",
     "@types/react-dom": "17.0.25",
     "parcel": "1.12.4",
-    "typescript": "3.9.10"
+    "typescript": "5.5.2"
   }
 }
